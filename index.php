@@ -40,7 +40,7 @@ echo "9) Date Array: ";
 print_r($date_array);
 echo  "<br>";
 
-print "10) Leap Years";
+print "10) Leap Years <br>";
 foreach ($year as $leapcheck) {
   $current_year = $year;
   for($y=0; $y<count($year); $i++){
@@ -65,5 +65,5 @@ foreach ($year as $leapcheck) {
     }
   }
 }
-print "2012:" .$leap[0]. "| 396: " .$leap[1]. "| 300: " .$leap[2]. "| 2000: " .$leap[3]. "| 1100: " .$leap[4]. "| 1089: " .$leap[5]. "|" "<br>"
+print "2012: " .$leap[0]. "| 396: " .$leap[1]. "| 300: " .$leap[2]. "| 2000: " .$leap[3]. "| 1100: " .$leap[4]. "| 1089: " .$leap[5]. "|";
 ?>
