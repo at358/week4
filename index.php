@@ -55,23 +55,21 @@ echo "9) Date Array: " print_r($date_array) "<br>" ;
 echo "10) Leap Years";
 
 foreach ($year as $leapcheck) {
-  if(if( (0 == $year % 4) and (0 != $year % 100) or (0 == $year % 400) )) {
-    $leap[] = True;
-}
-  else: 
-    $leap[] = False;  
-}
+  $current_year = $year
+  for($y=0; $y<count($year)); $i++)
+    {
+    switch ($current_year)
+      case ($current_year% 4 != 0);
+      $leap[] = false;
+      continue;
+      case ($current_year % 400 == 0)
+      $leap[] = true;
+      continue;
+      case($current_year % 100 == 0) {
+      $leap[] = false;
+      continue;
+    }
+  }
 
 echo "2012:" .$leap[0]. "| 396: " .$leap[1]. "| 300: " .$leap[2]. "| 2000: " .$leap[3]. "| 1100: " .$leap[4]. "| 1089: " .$leap[5]. |"
-
-for($y=0; $i<16; $i++)
-    {
-        $ = date("d", mktime(0, 0, 0, 2, 29, date("Y")+$i));
-        if($year == 29)
-        {
-            $year = date("Y")+$i;
-            echo "<p>The next leap year is 29th February $year</p><br>";
-        }
-    }
-
 ?>
