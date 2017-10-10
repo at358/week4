@@ -7,7 +7,7 @@ echo "The value of \$tar: ".$tar."<br>";
 
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
-print_r($year)
+print_r($year) "<br>";
 
 str_replace('-','/',$date); 
 
@@ -16,13 +16,13 @@ echo "2) $date with - replaced with /: " .$date. "<br>";
 $result = strnatcasecmp($date, $tar);
 
 if($result > 0) {
-  echo "3) $date compared to $tar: The Future";
+  echo "3) $date compared to $tar: The Future" "<br>";
 
 } else-if($result < 0) {
-  echo "3) $date compared to $tar: The Past";
+  echo "3) $date compared to $tar: The Past" "<br>";
 
 }else: 
-  echo "3) $date compared to $tar: Oops" ;
+  echo "3) $date compared to $tar: Oops "<br>"" ;
 
 $i = strpos($date,'/');
 
@@ -30,9 +30,9 @@ $r = strpos($date,'/', 4);
 
 echo "4) Positions of "/" in $date: " .$i. " " .$r."<br>";
 
-$date_array = explode('/',$date)  
+$date_array = explode('/',$date);  
   
-$words_in_date_array = count($date_array)  
+$words_in_date_array = count($date_array);  
 
 echo "5) Number of Words in $date: " .$words_in_date_array. "<br>";
 
@@ -71,5 +71,5 @@ foreach ($year as $leapcheck) {
     }
   }
 
-echo "2012:" .$leap[0]. "| 396: " .$leap[1]. "| 300: " .$leap[2]. "| 2000: " .$leap[3]. "| 1100: " .$leap[4]. "| 1089: " .$leap[5]. |"
+echo "2012:" .$leap[0]. "| 396: " .$leap[1]. "| 300: " .$leap[2]. "| 2000: " .$leap[3]. "| 1100: " .$leap[4]. "| 1089: " .$leap[5]. "|" "<br>"
 ?>
